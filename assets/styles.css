@@ -1,0 +1,53 @@
+html{
+    height: 100%;
+}
+body {
+    /* background-image: url('/assets/img/magicpattern-grid-1.png'); */
+    /* background-color: blanchedalmond; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    scrollbar-width: none;
+}
+
+.mouse-cursor-gradient-tracking {
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    width: 50%;
+    /* margin: 5% auto; */
+    display: block;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+
+}
+
+/* .mouse-cursor-gradient-tracking:hover {
+    box-shadow: 0px 11px 30px rgba(25, 25, 25, 0.25);
+    color: #c2bebea1;
+    font-size: 1.24em;
+} */
+
+.mouse-cursor-gradient-tracking::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle closest-side, rgb(179, 69, 69), transparent);
+    transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
+}
+
+.mouse-cursor-gradient-tracking:hover::before {
+    --size: 75vw;
+}
+
+.body-content {
+    height: calc(100% - 84px);
+}
