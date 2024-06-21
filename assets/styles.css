@@ -9,6 +9,7 @@ body {
     background-attachment: fixed;
     height: 100%;
     scrollbar-width: none;
+    background-color: black;
 }
 
 .mouse-cursor-gradient-tracking {
