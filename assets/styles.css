@@ -52,3 +52,12 @@ body {
 .body-content {
     height: calc(100% - 84px);
 }
+
+.filter-red {
+    filter: grayscale(100%) sepia(100%) hue-rotate(-50deg) saturate(500%) brightness(75%);
+    transition: filter 0.3s ease;
+}
+
+.filter-red:hover {
+    filter: none;
+}
