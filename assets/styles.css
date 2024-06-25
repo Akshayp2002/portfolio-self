@@ -45,9 +45,9 @@ body {
     transition: width .2s ease, height .2s ease;
 }
 
-.mouse-cursor-gradient-tracking:hover::before {
+/* .mouse-cursor-gradient-tracking:hover::before {
     --size: 75vw;
-}
+} */
 
 .body-content {
     height: calc(100% - 84px);
@@ -108,7 +108,14 @@ body {
 }
 
 .shadow-glow {
-    box-shadow: 0px 2px 36px 9px rgba(241, 241, 241, 0.26) inset;
+box-shadow:none
+}
+
+/* Media query for screens 640px and above */
+@media (min-width: 640px) {
+    .shadow-glow {
+        box-shadow: 0px 2px 36px 9px rgba(241, 241, 241, 0.26) inset;
+    }
 }
 @keyframes slide-in-top {
     0% {
@@ -156,15 +163,12 @@ body {
     min-width: min(40rem, 100%);
 }
 
-.box {
+/* .box {
     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
     animation: borderRotate var(--d) linear infinite forwards;
-}
+} */
 
-.box:nth-child(2) {
-    border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
-    animation: borderRadial var(--d) linear infinite forwards;
-}
+
 
 @keyframes borderRotate {
     100% {
