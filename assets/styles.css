@@ -61,3 +61,63 @@ body {
 .filter-red:hover {
     filter: none;
 }
+
+
+.Btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(92, 89, 89);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+}
+
+.svgIcon {
+    fill: rgb(255, 255, 255);
+}
+
+.icon2 {
+    width: 18px;
+    height: 5px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+.Btn:hover {
+    background-color: rgb(51, 51, 51);
+    transition-duration: 0.3s;
+}
+
+.Btn:hover .icon2 {
+    border-bottom: 2px solid rgb(235, 235, 235);
+    border-left: 2px solid rgb(235, 235, 235);
+    border-right: 2px solid rgb(235, 235, 235);
+}
+
+.Btn:hover .svgIcon {
+    fill: rgb(255, 255, 255);
+    animation: slide-in-top 1s linear infinite;
+}
+
+.shadow-glow {
+    box-shadow: 0px 2px 36px 9px rgba(241, 241, 241, 0.26) inset;
+}
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

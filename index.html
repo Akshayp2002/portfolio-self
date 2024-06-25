@@ -17,7 +17,7 @@
                 <!-- <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="/assets/img/github.png" class="h-8 w-8" alt="Git Hub">
                 </a> -->
-                <section class="flex justify-center items-center">
+                <div class="flex justify-center items-center">
                     <button href="/"
                         class="group flex justify-center p-2 rounded-md drop-shadow-xl text-white font-semibold hover:translate-y-3 transition-all duration-500 hover:from-[#331029] hover:to-[#310413]">
                         <svg class="w-8" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,17 +30,9 @@
                             GitHub
                         </span>
                     </button>
-                </section>
-
-                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
-                    <button
-                        class="cursor-pointer text-white font-bold relative text-[14px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
-                        Download
-                    </button>
-
                 </div>
                 <div
-                    class="mouse-cursor-gradient-tracking hidden justify-between rounded-full backdrop-blur-sm bg-red/20 border-2 p-1 border-red-300/50 items-center w-full lg:flex lg:w-auto lg:order-1">
+                    class="mouse-cursor-gradient-tracking hidden justify-between rounded-full backdrop-blur-sm bg-red/20 border p-1 border-white items-center w-full lg:flex lg:w-auto shadow-glow">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 px-4">
                         <li>
                             <a href="#section-1" class="block py-2 pr-4 pl-3 text-gray-500">Home</a>
@@ -56,6 +48,15 @@
                         </li>
                     </ul>
                 </div>
+
+                <button class="Btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon">
+                        <path
+                            d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                        </path>
+                    </svg>
+                    <span class="icon2"></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -81,7 +82,7 @@
                 Innovative Solutions with Code and Creativity.</h3>
 
             <button
-                class="mt-12 flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-black to-black px-7 py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-red-800 hover:from-black hover:to-gray-900">
+                class="mt-12 flex gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-black to-black px-7 py-3 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-red-800 hover:from-black hover:to-gray-900 shadow-glow">
                 Download CV
             </button>
         </section>
@@ -90,7 +91,7 @@
 
         <section id="section-2" class="body-content pointer-events-none md:min-h-screen h-full md:py-6 mb-0">
             <div
-                class="bg-black grid xl:grid-cols-2 grid-cols-1 bg-no-repeat bg-cover object-cover bg-[url('/assets/img/magicpattern-mesh-4.png')]  w-[100%] sm:w-[80%] md:w-[90%] lg:w-[60%] md:h-[30%]  mx-auto h-[70%] items-center border-y-[1.5px] border-red-900  justify-between sm:border border-y-2 border-white justify-between sm:rounded-2xl">
+                class="bg-black grid xl:grid-cols-2 grid-cols-1 bg-no-repeat bg-cover object-cover bg-[url('/assets/img/magicpattern-mesh-4.png')]  w-[100%] sm:w-[80%] md:w-[90%] lg:w-[60%] md:h-[30%]  mx-auto h-[70%] items-center justify-between sm:border sm:border-white justify-between sm:rounded-2xl shadow-glow ">
                 <div class="p-3 md:p-6">
                     <!-- bg-[url('magicpattern-mesh-3.png')] -->
                     <h1
@@ -200,7 +201,7 @@
 
     <!-- last-->
     <div
-        class="bg-[url('/assets/img/magicpattern-mesh-mobile.png')] md:bg-[url('/assets/img/magicpattern-mesh-4.png')] bg-no-repeat bg-cover">
+        class="bg-[url('/assets/img/magicpattern-mesh-mobile.png')] sm:bg-[url('/assets/img/magicpattern-mesh-4.png')] bg-no-repeat bg-cover">
         <div class="mb-10">
             <h1
                 class="mt-12 text-center leading-loose relative z-10 font-black text-transparent w-full text-6xl sm:text-[6rem] lg:text-[8rem] lg:-mt-12 bg-clip-text opacity-60 bg-gradient-to-r from-red-500 to-yellow-500">
@@ -208,7 +209,7 @@
 
             <form action="" method="post">
                 <div
-                    class="bg-black grid md:grid-cols-2 grid-cols-1 bg-no-repeat bg-cover object-cover bg-transparent  w-[100%] sm:w-[80%] md:w-[90%] lg:w-[50%] md:h-[50%]  mx-auto h-[70%] items-center sm:border border-y-[1.5px] border-white justify-between sm:rounded-2xl">
+                    class="bg-black grid md:grid-cols-2 grid-cols-1 bg-no-repeat bg-cover object-cover bg-transparent  w-[100%] sm:w-[80%] md:w-[90%] lg:w-[50%] md:h-[50%]  mx-auto h-[70%] items-center sm:border sm:border-white justify-between sm:rounded-2xl shadow-glow py-10">
                     <div class="p-3 md:p-6">
                         <div class="mb-6">
                             <label for="title" class="block mb-2 text-sm font-medium text-white">Name</label>
