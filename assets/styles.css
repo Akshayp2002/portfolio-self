@@ -1,12 +1,8 @@
-html{
+html {
     height: 100%;
 }
+
 body {
-    /* background-image: url('/assets/img/magicpattern-grid-1.png'); */
-    /* background-color: blanchedalmond; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100%;
     scrollbar-width: none;
     background-color: black;
@@ -108,15 +104,16 @@ body {
 }
 
 .shadow-glow {
-box-shadow:none
+    box-shadow: none
 }
 
 /* Media query for screens 640px and above */
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .shadow-glow {
         box-shadow: 0px 2px 36px 9px rgba(241, 241, 241, 0.26) inset;
     }
 }
+
 @keyframes slide-in-top {
     0% {
         transform: translateY(-10px);
@@ -201,4 +198,125 @@ box-shadow:none
         --gradX: 50%;
         --gradY: 0%;
     }
+}
+/* gradient line */
+.gradient-border-top {
+    position: relative;
+    background: rgb(0, 0, 0);
+
+    z-index: 1;
+}
+
+.gradient-border-top::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, #000, #af0303, #000);
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+/* hover glow */
+.card {
+    --start: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.card::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    border: 2px solid transparent;
+    background: var(--gradient);
+    background-attachment: fixed;
+    mask: linear-gradient(#0000, #0000),
+        conic-gradient(from calc((var(--start) - (20 * 1.1)) * 1deg),
+            #ffffff1f 0deg,
+            white,
+            #ffffff00 100deg);
+    mask-composite: intersect;
+    mask-clip: padding-box, border-box;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.glow {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(14px);
+}
+
+.glow::before {
+    position: absolute;
+    content: "";
+    width: 98%;
+    height: 98%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    border: 15px solid transparent;
+    background: var(--gradient);
+    background-attachment: fixed;
+
+    mask: linear-gradient(#0000, #0000),
+        conic-gradient(from calc((var(--start) - (20 * 1.1)) * 1deg),
+            #ffffff1f 0deg,
+            white,
+            #ffffff00 100deg);
+    mask-composite: intersect;
+    mask-clip: padding-box, border-box;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+:root {
+    --gradient: conic-gradient(from 90deg at 50% 50%,
+            rgb(251, 55, 60),
+            rgba(252, 114, 28, 1),
+            rgba(255, 220, 0, 1),
+            rgba(27, 206, 255, 1),
+            rgba(42, 107, 255, 1),
+            rgba(217, 41, 255, 1),
+            rgba(255, 10, 92, 1));
+}
+
+.card:hover>.glow::before {
+    opacity: 1;
+}
+
+.card:hover::before {
+    opacity: 0.6;
+}
+
+h1 {
+    font-size: 65px;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(174, 174, 174);
+    font-weight: 600;
 }
