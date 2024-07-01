@@ -1,0 +1,17 @@
+.content {
+    width: 300px;
+    position: relative; 
+    background: blue;
+}
+
+.draggable {
+    display: inline-block;
+    float: left;
+    height: 60px;
+    padding: 20px 0;
+    margin: 5px;
+    text-align: center;
+    /* background: yellow; */
+    position: absolute;
+    transition: all 700ms ease;
+}

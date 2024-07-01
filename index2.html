@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets2/style.css">
 </head>
 
 <body class="bg-[#f7f2f2]">
@@ -19,18 +20,19 @@
         </div>
         <div>Contact</div>
     </div>
-    <div class="container mx-auto min-h-screen grid grid-cols-2  lg:grid-cols-4 gap-4 p-4 px-32">
-        <div class="bg-white col-span-2 rounded-2xl p-10">
-            <div>
-                <img class="w-20" src="/assets2/img/memoji-1.png" alt="">
-            </div>
-            <div>
-                <p class="font-medium text-gray-500">I’m<span class="font-bold font-serif text-4xl text-black">
-                        Akshay</span>, a developer and product designer from Ireland. I'm
-                    interested in React, Node, Product Design, Jamstack, Startups, Cryptocurrencies and Music.</p>
-            </div>
+
+
+
+    <div class="container mx-auto grid grid-cols-2  lg:grid-cols-4 gap-4 p-4 px-32 pb-20 content">
+        <!-- Name -->
+        <div class="bg-white col-span-2 rounded-[30px] p-10 flex flex-col gap-4 h-[280px] draggable" draggable="true">
+            <img class="w-20" src="/assets2/img/memoji-1.png" alt="">
+            <p class="font-medium text-gray-500">I’m<span class="font-bold font-serif text-4xl text-black">
+                    Akshay</span>, a developer and product designer from Ireland. I'm
+                interested in React, Node, Product Design, Jamstack, Startups, Cryptocurrencies and Music.</p>
         </div>
-        <div class="col-span-2 md:col-span-1 rounded-2xl relative">
+        <!-- Maps -->
+        <div class="col-span-2 md:col-span-1 rounded-[30px] relative draggable" draggable="true">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
                 width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
@@ -40,36 +42,242 @@
                 <img src="/assets2/img/memoji-1.png" alt="Overlay Image" class="w-10">
             </div>
         </div>
+        <!-- row 2 vertical -->
+        <div class="row-span-2 bg-[#6ed2b7] rounded-[30px] static relative draggable" draggable="true">
+            <div class="bg-[#ffc6d7] rounded-tl-full w-72 h-80 absolute bottom-0 right-0">
 
-        <div class="row-span-2 bg-[#6ed2b7] rounded-2xl">3
-        </div>
-        <div class="bg-white rounded-2xl">
-            <div>
-                <img class="w-20" src="/assets2/img/memoji-1.png" alt="">
             </div>
-            <div>
-                <p class="font-medium text-gray-500">I Dont Belog</p>
+
+            <div
+                class="bg-white w-10 h-10 rounded-full absolute bottom-0 left-0 m-4 flex justify-center items-center hover:ring-4 ring-gray-200">
+                <svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.256 18.256"
+                    style="transition:.3s">
+                    <g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)">
+                        <path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581"
+                            transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"></path>
+                        <path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287"
+                            transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"></path>
+                    </g>
+                    <path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path>
+                </svg>
             </div>
         </div>
-        <div class="bg-[#98d0ff] rounded-2xl flex items-center justify-center">
+        <!-- Spotify -->
+        <div class="bg-white rounded-[30px] p-10 flex flex-col justify-between draggable" draggable="true">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="80" width="80"
+                    viewBox="-33.4974 -55.829 290.3108 334.974">
+                    <path
+                        d="M177.707 98.987c-35.992-21.375-95.36-23.34-129.719-12.912-5.519 1.674-11.353-1.44-13.024-6.958-1.672-5.521 1.439-11.352 6.96-13.029 39.443-11.972 105.008-9.66 146.443 14.936 4.964 2.947 6.59 9.356 3.649 14.31-2.944 4.963-9.359 6.6-14.31 3.653m-1.178 31.658c-2.525 4.098-7.883 5.383-11.975 2.867-30.005-18.444-75.762-23.788-111.262-13.012-4.603 1.39-9.466-1.204-10.864-5.8a8.717 8.717 0 015.805-10.856c40.553-12.307 90.968-6.347 125.432 14.833 4.092 2.52 5.38 7.88 2.864 11.968m-13.663 30.404a6.954 6.954 0 01-9.569 2.316c-26.22-16.025-59.223-19.644-98.09-10.766a6.955 6.955 0 01-8.331-5.232 6.95 6.95 0 015.233-8.334c42.533-9.722 79.017-5.538 108.448 12.446a6.96 6.96 0 012.31 9.57M111.656 0C49.992 0 0 49.99 0 111.656c0 61.672 49.992 111.66 111.657 111.66 61.668 0 111.659-49.988 111.659-111.66C223.316 49.991 173.326 0 111.657 0"
+                        fill="#1ed660" />
+                </svg>
+            </div>
+            <div class="">
+                <p class="font-medium text-green-600">Foundainess DC</p>
+                <h1 class="font-bold font-serif text-2xl">I Dont Belog</h1>
+                <p class="font-medium text-gray-500">Foundainess DC</p>
+            </div>
+        </div>
+        <!-- Twitter -->
+        <div class="bg-[#98d0ff] rounded-[30px] flex items-center justify-center static relative p-6 h-[280px] draggable"
+            draggable="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="75.121" height="61.052" viewBox="0 0 75.121 61.052"
                 class="TwitterSVG__SVG-sc-1towu9w-0 juCkzD" fill="#ffffff">
                 <path id="icons8-twitter"
                     d="M75.063,12.844a30.83,30.83,0,0,1-8.858,2.43A15.451,15.451,0,0,0,72.984,6.75,30.947,30.947,0,0,1,63.2,10.485,15.418,15.418,0,0,0,36.937,24.542,43.765,43.765,0,0,1,5.17,8.441,15.445,15.445,0,0,0,9.94,29.019a15.4,15.4,0,0,1-6.984-1.932v.193A15.438,15.438,0,0,0,15.317,42.4a15.421,15.421,0,0,1-4.057.538,14.847,14.847,0,0,1-2.9-.28,15.447,15.447,0,0,0,14.4,10.709,30.9,30.9,0,0,1-19.14,6.595,30.3,30.3,0,0,1-3.671-.217A43.544,43.544,0,0,0,23.56,66.666c28.348,0,43.852-23.483,43.852-43.846,0-.667-.018-1.341-.04-2a31.325,31.325,0,0,0,7.692-7.98Z"
                     transform="translate(0.058 -5.614)"></path>
             </svg>
+            <!-- right top arrow -->
+            <div class="bg-white w-10 h-10 rounded-full absolute bottom-0 left-0 m-4 flex justify-center items-center hover:ring-4 ring-gray-200"
+                draggable="true">
+                <svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.256 18.256"
+                    style="transition:.3s">
+                    <g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)">
+                        <path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581"
+                            transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"></path>
+                        <path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287"
+                            transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"></path>
+                    </g>
+                    <path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path>
+                </svg>
+            </div>
         </div>
-        <div class="bg-green-200 row-span-2 rounded-2xl">6
+        <!-- row 2 vertical -->
+
+        <div class="bg-[#98d0ff] row-span-2 rounded-[30px] static relative draggable" draggable="true">
+            <div class="bg-[#ffc6d7] rounded-bl-full w-72 h-64 absolute top-0 right-0">
+
+            </div>
+            <!-- right top arrow -->
+            <div
+                class="bg-white w-10 h-10 rounded-full absolute bottom-0 left-0 m-4 flex justify-center items-center hover:ring-4 ring-gray-200">
+                <svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.256 18.256"
+                    style="transition:.3s">
+                    <g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)">
+                        <path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581"
+                            transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"></path>
+                        <path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287"
+                            transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"></path>
+                    </g>
+                    <path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path>
+                </svg>
+            </div>
         </div>
-        <div class="bg-green-200  lg:col-span-2 rounded-2xl">7
+        <div class="bg-white  lg:col-span-2 rounded-[30px] p-10 h-[280px] flex flex-col justify-between draggable"
+            draggable="true">
+            <div>
+                <h2 class="font-bold font-serif text-[30px]">How it started vs. how it's going</h2>
+                <p class="font-medium text-gray-500">A short personal history as it relates to design and development,
+                    and
+                    how I've found value in the
+                    cross-section between
+                    both disciplines.</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+                <button
+                    class="rounded-full bg-white relative flex hover:ring-4 ring-gray-200 p-2 px-4 border-2 border-gray-200">
+                    <svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 18.256 18.256" style="transition:.3s">
+                        <g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)">
+                            <path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581"
+                                transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5"></path>
+                            <path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287"
+                                transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5"></path>
+                        </g>
+                        <path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path>
+                    </svg>
+                    Read More
+                </button>
+                <p class="text-gray-500">June 1 2024</p>
+            </div>
         </div>
-        <div class="bg-green-500 rounded-2xl">8
+        <div class="bg-green-500 rounded-[30px]">8
         </div>
-        <div class="bg-[#ffe3a4]  lg:col-span-2 rounded-2xl">9
+        <!-- Yellow card -->
+        <div class="bg-[#ffe3a4]  lg:col-span-2 rounded-[30px] relative h-[280px] draggable" draggable="true">
+            <div class="bg-[#ffc6d7] rounded-t-full w-80 h-44 absolute bottom-0">
+            </div>
+            <!-- right top arrow -->
+            <div
+                class="bg-white w-10 h-10 rounded-full absolute bottom-0 left-0 m-4 flex justify-center items-center hover:ring-4 ring-gray-200 ">
+                <svg id="Arrow.7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.256 18.256"
+                    style="transition:.3s">
+                    <g id="Group_7" data-name="Group 7" transform="translate(5.363 5.325)">
+                        <path id="Path_10" data-name="Path 10" d="M14.581,7.05,7.05,14.581"
+                            transform="translate(-7.05 -7.012)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"></path>
+                        <path id="Path_11" data-name="Path 11" d="M10,7l5.287.037.038,5.287"
+                            transform="translate(-7.756 -7)" fill="none" stroke="#0D1117" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"></path>
+                    </g>
+                    <path id="Path_12" data-name="Path 12" d="M0,0H18.256V18.256H0Z" fill="none"></path>
+                </svg>
+            </div>
         </div>
-        <div class="bg-green-200  lg:col-span-2 rounded-2xl">10
+        <!-- Last card -->
+        <div class="bg-green-200  lg:col-span-2 rounded-[30px] draggable" draggable="true">10
         </div>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    console.log("yeyteye")
+    var dragDestIndex;
+    var draggedEl;
+    var draggedElIndex;
+    var rearranging = false;
+    var rearrangingDuration = 350;
+    var draggableElArr = $('.draggable');
+
+    function arrangeItems(itemEls, columnsCount, containerEl, elHeight) {
+        var $containerEl = $(containerEl);
+
+        // Set height of elements
+        var elWidth = $containerEl.width() / columnsCount;
+        elHeight = elHeight || elWidth;
+
+        for (var i = 0; i < itemEls.length; i++) {
+            var $item = $(itemEls[i]);
+            $item.data('index', i);
+            var pos = {
+                x: (i % columnsCount),
+                y: Math.floor(i / columnsCount)
+            };
+
+            $item.css({
+                top: pos.y * elHeight + 'px',
+                left: pos.x * elWidth + 'px',
+                width: 'calc(' + (100 / columnsCount) + '% - 10px)',
+                height: 'calc(' + elHeight + 'px - 10px)',
+                boxSizing: 'border-box'
+            });
+        }
+    }
+
+    // Rearrange the items in an array, returning a the modified array.
+    // @param movedItemIndex: the index of the element being moved to a
+    //   new position in the array
+    // @param destinationIndex: the new index being given to the moved element
+    
+    function rearrangeItems(arr, movedItemIndex, destinationIndex) {
+        var movedEl = arr.splice(movedItemIndex, 1)[0];
+        arr.splice(destinationIndex, 0, movedEl);
+        return arr;
+    };
+
+    arrangeItems(draggableElArr, 4, $('.content'));
+
+    $('.draggable').on('dragstart', function (e) {
+        draggedEl = $(this);
+        var sortedArr = [];
+        for (var i = 0; i < draggableElArr.length; i++) {
+            var elIndex = $(draggableElArr[i]).data('index');
+            sortedArr[elIndex] = draggableElArr[i];
+        }
+        draggableElArr = sortedArr;
+        draggedElIndex = $(this).data('index');
+        console.log('dragging element at position ', draggedElIndex);
+        $(this).css({ opacity: 0, transition: 'all 100ms ease' });
+    });
+
+    $('.draggable').on('dragend', function (e) {
+        e.preventDefault();
+        $(this).css({ opacity: 1, transition: 'all 700ms ease' });
+    });
+
+    $('.draggable').on('dragover', function (e) {
+        e.preventDefault();
+        if (rearranging) {
+            return;
+        }
+        var dragDestIndex = $(this).data('index');
+        console.log('dragging over position ', dragDestIndex);
+        draggedElIndex = draggedEl.data('index');
+        if (draggedElIndex !== dragDestIndex) {
+            rearranging = true;
+            console.log('dragging element at position ', draggedElIndex, ' to new dest at position ', dragDestIndex);
+            var rearrangedEls = rearrangeItems(draggableElArr, draggedElIndex, dragDestIndex);
+            arrangeItems(rearrangedEls, 4, $('.content'));
+            setTimeout(function () { rearranging = false }, rearrangingDuration);
+        }
+    });
+
+    $('.draggable').on('drop', function (e) {
+        e.preventDefault();
+        rearranging = false;
+    });
+</script>
 
 </html>
